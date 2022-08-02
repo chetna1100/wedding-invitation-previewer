@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weedding Template</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <nav>
+    <h1 class="logo">Wedding Card</h1>
+      </nav> -->
+      <header class="banner">
+        <img src="images/invitation-header.jpg" alt="invitation" />
+      </header>
+      <aside class="side medium-fade shadow">
+        
+        <h3>Wedding templates</h3>
+        <p>Choose your design</p>
+        
+        <ul class="flex-item">
+           
+          <li><a id="clickFloral" > <img id="defaultOpen" src="images/floral-1.png"
+            alt="Wedding-Invitation"
+          /></a> Floral</li>
+          <li><a id="clickGold"> <img
+            src="images/ultra-modern.png"
+            alt="Wedding-Invitation"
+          />Gold</a></li>
+          <li><a id="clickRustic"> <img
+            src="images/Rustic-wedding-invitation-template-3-731x1024.jpg"
+            alt="Rustic"
+          />Rustic</a></li>
+        </ul>
+      </aside>
+      <article class="content medium-fade shadow">
+        <h2>Your details</h2>
+        <p>
+          Find my most popular
+        <div class="flex-par">
+            <div class="container">
+                
+                <div class="clearfix">
+                    <div class="container">
+                        <form id="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                          <label for="firstName">First Name</label>
+                          <input type="text" id="firstName" name="firstName" placeholder="First Name.." required>
+                      
+                          <label for="secondName">Second Name</label>
+                          <input type="text" id="secondName" name="secondName" placeholder="Second Name.." required >
+
+                          <label for="date">Date</label>
+                          <!-- <input type="date" id="dateInput" name="date" placeholder="dd-Mmm-yyyy" value=""
+                          min="01-01-2022" max="31-12-2030"> -->
+                          <input type="date" id="dateInput" value="2019-12-07">
+
+                          <label for="time">Time</label>
+                          <input type="text" id="timeInput" name="Time" placeholder="Time.." required>
+
+                          <label for="venue">Venue</label>
+                          <input type="text" id="venueInput" name="Venue" placeholder="Venue.." required>
+
+                          <input type="button" id="resetBtn" onclick="window.location.reload()" value="Reset">
+                      
+                          <input type="submit" onclick="mySubmit()" value="Submit">
+                        </form>
+                      </div>
+                      
+                </div>
+              </div>
+        </div>
+      </article>
+      
+      <aside class="right-side medium-fade shadow">
+        <h2>Preview</h2>
+        <div class="flex-item">
+           <div id="floralDiv" class="preview">
+            <p class="textDemo1">Kindly join us for the wedding of</p>
+            <p class="displayFirstName">Nancy</p>
+            <p class="displayAnd">and</p>
+            <p class="displaySecondName">Henry</p>
+            
+            <p class="displayDate">01 . 12. 2022</p>
+            <p class="displayTime">3:00 PM</p>
+            <p class="displayVenue">Banyule Community Centre</p>
+        </div>
+          <div id="goldDiv" class="preview"> 
+           
+        </div>
+          <div id="rusticDiv" class="preview">
+        
+          </div>
+        </div>
+      </aside>
+      <footer class="main-footer light-fade">
+        
+        <div class="copyright">
+          <p>Copyright © 2022 Wedding Planner. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
