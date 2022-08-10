@@ -71,7 +71,7 @@ function displayDateValue() {
   }
 }
 //Call the events
-inputDate.addEventListener('keyup', displayDateValue)
+inputDate.addEventListener('change', displayDateValue)
 //-----------Time
 // Selectors
 const inputTime = document.getElementById('timeInput')
