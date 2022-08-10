@@ -167,15 +167,15 @@ nav a {
     border: 1px solid #aa94a3;
   }
   .light-fade { background: rgb(250,201,234);
-background: linear-gradient(top, rgba(250,201,234,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
-background: -moz-linear-gradient(top, rgba(250,201,234,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
-background: -webkit-linear-gradient(top, rgba(250,201,234,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
+background: linear-gradient(to top, rgba(250,201,234,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
+background: -moz-linear-gradient(to top, rgba(250,201,234,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
+background: -webkit-linear-gradient(to top, rgba(250,201,234,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
   }
 .medium-fade {
   background: rgb(252,230,245);
-  background: linear-gradient(top, rgba(252,230,245,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
-  background: -moz-linear-gradient(top, rgba(252,230,245,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
-  background: -webkit-linear-gradient(top, rgba(252,230,245,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
+  background: linear-gradient(to top, rgba(252,230,245,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
+  background: -moz-linear-gradient(to top, rgba(252,230,245,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
+  background: -webkit-linear-gradient(to top, rgba(252,230,245,1) 0%, rgba(242,240,241,1) 32%, rgba(249,249,249,1) 100%);
 }
 .side,.right-side,.content{border: 1px solid #efefef;
 padding: 10px;}
