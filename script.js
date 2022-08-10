@@ -108,53 +108,7 @@ function reset() {
 //Call the events
 resetBtn.addEventListener('click', reset)
 
-//----validateForm
 
-// let y = document.forms["myForm"]["secondName"].value;
-// function validateForm() {
-//   let x = document.forms["myForm"]["firstName"].value;
-//   let y = document.forms["myForm"]["secondName"].value;
-//   if (x == "" || y == "") {
-//     alert("Please fill in this field");
-//     return false;
-//   }
-// }
-
-function validateForm() {
-  var a = document.forms["register"]["firstname"].value;
-  var b = document.forms["register"]["lastname"].value;
-  var c = document.forms["register"]["email"].value;
-  var d = document.forms["register"]["email2"].value;
-  if (a == null || a == "" || b == null || b == "" || c == null || c == ""|| d == null || d == "") {
-      $(".form_error").show();
-      $('html,body').animate({
-         scrollTop: $(".form_error").offset().top - 180 
-      });
-
-
-      var e = document.forms["register"]["contactnum"].value;
-      var f = document.forms["register"]["mobnum"].value;
-      var g = document.forms["register"]["postcode"].value;
-      if (e == null || e == "" || f == null || f == "" || g == null || g == "") {
-          $(".form_error").show();
-          $('html,body').animate({
-               scrollTop: $(".form_error").offset().top - 180 
-          });
-
-
-          var h = document.forms["register"]["compname"].value;
-          var i = document.forms["register"]["compreg"].value;
-          if (h == null || h == "" || i == null || i == "") {
-              $(".form_error").show();
-              $('html,body').animate({
-                  scrollTop: $(".form_error").offset().top - 180 
-              });
-
-              return false;
-          }   
-      }
-  }
-}
 
 
 //=-------------submit

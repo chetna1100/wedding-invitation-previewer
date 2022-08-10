@@ -4,7 +4,20 @@ html {
   font-family: Arial, Helvetica, sans-serif ;
   height: 100%;
 }
-
+@font-face {
+  font-family: goldFont;
+  src: url(images/Auttera-1.1.woff);
+  font-weight: bold;
+}
+@font-face {
+  font-family: weddingFont;
+  src: url(images/Wedding.woff);
+  font-weight: bold;
+}
+@font-face {
+  font-family: rusticFont;
+  src: url(images/TheFlybirds.woff);
+}
 *{
   box-sizing: border-box;
 }
@@ -40,6 +53,7 @@ input[type=text], select, textarea ,input[type=date]{
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  color: #000;
 }
 
 input[type=submit] ,input[type=button] {
@@ -55,7 +69,9 @@ input[type=submit]:hover,input[type=button]:hover {
   background-color: #45a049;
   color: #fff;
 }
-
+input:focus {
+      background-color:#fff;
+  }
 
 
 .container {
@@ -165,40 +181,37 @@ background: -webkit-linear-gradient(top, rgba(250,201,234,1) 0%, rgba(242,240,24
 padding: 10px;}
 .right-side h2{text-align: center;}
 .preview{ height: 550px ; width: 380px; position: relative;
-  background: url(images/floral-1.png) top /cover; 
+  background: url(images/floral-1.png) top /cover;  -webkit-animation: fadeOut 7s infinite;
+  animation: fadeOut 7s infinite;-webkit-animation: image_blur 2s; 
 }
 
-#floralDiv{color:purple ; font: 13px fantasy;}
-#floralDiv .textDemo1{ width: 135px; font: 16px/16px Arial, Helvetica, sans-serif; padding: 47px 0px 0px 45px ;text-align: center;}
-#floralDiv .displayFirstName{font-size: 40px; position: absolute; top: 90px; left: 180px;}
-#floralDiv .displayAnd{font-size: 25px; position: absolute; top: 170px; left: 180px;}
-#floralDiv  .displaySecondName{font-size: 40px; position: absolute; top: 200px; left: 180px;}
+#floralDiv{color:purple ; font: 16px Arial, Helvetica, sans-serif; }
+#floralDiv .textDemo1{ width: 135px;  padding: 47px 0px 0px 45px ;text-align: center;}
+#floralDiv .displayFirstName{font-size:55px; position: absolute; top: 50px; left: 180px; font-family: weddingFont;}
+#floralDiv .displayAnd{font-size: 25px; position: absolute; top: 160px; left: 180px;}
+#floralDiv  .displaySecondName{font-size: 55px; position: absolute; top: 170px; left: 180px; font-family: weddingFont;}
 #floralDiv  .displayDate{font-size: 18px; position: absolute; top: 340px; left: 80px;}
 #floralDiv  .displayTime{font-size: 18px; position: absolute; top: 370px; left: 80px;} 
 #floralDiv .displayVenue{font-size: 18px; position: absolute; top: 400px; left: 80px; width: 150px;}
 
 #goldDiv,#clickGold img{background-color: #333; }
-#goldDiv{padding-top: 80px;}
-#goldDiv p{text-align: center;  
-  color:#d9b86e ; 
-  padding: 10px 50px ; margin: 0px; }
-#goldDiv .textDemo1{  font-size: 13px;line-height: 18px; padding: 0px 130px; }
-#goldDiv .displayFirstName{font-size: 40px; }
-#goldDiv .displayAnd{font-size: 20px; }
-#goldDiv .displaySecondName{font-size: 40px; }
+#goldDiv{padding-top: 100px; font-family: goldFont;}
+#goldDiv p{text-align: center;  color:#d9b86e ; padding: 0px 30px ; margin: 0px; }
+#goldDiv .textDemo1{  font-size: 23px; font-weight: lighter; line-height: 25px; padding: 0px 110px; }
+#goldDiv .displayFirstName{font-size: 50px;}
+#goldDiv .displayAnd{font-size:30px; padding-top: 0px;}
+#goldDiv .displaySecondName{font-size: 40px; padding-bottom: 10px; }
 #goldDiv .displayDate{font-size: 18px;}
 #goldDiv .displayTime{font-size: 18px; } 
-#goldDiv .displayVenue{font-size: 18px;padding: 0px 100px; }
+#goldDiv .displayVenue{font-size:25px;padding: 10px 100px;line-height: 30px; }
 
-#rusticDiv{color: #fff; text-align: center; text-shadow: 2px 2px #100326;}
-#rusticDiv p{margin: 15px 0px;font-size: 25px;  }
-#rusticDiv .textDemo1{  font-size: 20px;padding: 80px 50px 0px 50px;}
-#rusticDiv .displayFirstName{  font-size: 40px; text-shadow: 2px 2px #ff0000;}
+#rusticDiv{color: #fff; text-align: center; text-shadow: 1px 1px #100326; font-family: rusticFont;}
+#rusticDiv p{margin: 5px 0px;font-size: 25px;  }
+#rusticDiv .textDemo1{ padding: 40px 50px 0px 50px;}
+#rusticDiv .displayFirstName{  font-size: 50px; color: #feef97;  }
 #rusticDiv .displayAnd{font-size: 20px; }
-#rusticDiv .displaySecondName{font-size: 40px; text-shadow: 2px 2px #ff0000;}
-/* #rusticDiv .displayDate{font-size: 18px;}
-#rusticDiv .displayTime{font-size: 18px; } */
-#rusticDiv .displayVenue{padding: 0px 70px; } 
+#rusticDiv .displaySecondName{font-size: 50px; color: #feef97;}
+#rusticDiv .displayVenue{padding: 0px 70px; color: #feef97;} 
 
 
 input[type="date"]::-webkit-datetime-edit, input[type="date"]::-webkit-inner-spin-button, input[type="date"]::-webkit-clear-button {
